@@ -1,0 +1,404 @@
+:root{
+    --color1: #222831;
+    --color2: #393E46;
+    --color3: #00ADB5;
+    --color4: #00FFF5;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body{
+    background: var(--color1);
+}
+/*Navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--color3);
+    height: 60px;
+}
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-family: "Monserrat", sans-serif;
+}
+
+/* navbar menu */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    outline: 1px solid var(--color4);
+    border-radius: 20px;
+    background-color: var(--color4);
+}
+
+.menu li {
+padding: 5px 20px;
+}
+
+/*responsive menu*/
+input[type=checkbox]{
+display: none;
+} 
+/*menu hamburguesa*/
+.hamburger {
+    display: none;
+    font-size: 20px;
+    user-select: none;
+}
+
+.titulo{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+main{
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+.sobre-mi{
+    width: 70%;
+    margin: auto;
+}
+.card-img{
+    background-image: url(../img/sobre-mi.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    
+}
+.card-texto{
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+.card-texto h2, p{
+    margin-bottom: 20px;
+}
+.card-btn{
+    padding-top: 40px;
+    align-self: center;
+}
+.card-btn button{
+    padding: 8px;
+    width: 100px;
+    cursor: pointer;
+    background: var(--color3);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+}
+.card-btn button:hover{
+    background: var(--color4);
+}
+
+.info-portfolio{
+    background-image: url(../img/img5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    margin: 50px auto;
+    height: 500px;
+
+}
+.info-texto {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Monserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.parrafo1{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.clientes{
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.clientes h3,h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 900;
+    color: var(--color3);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.card-proyectos{
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 10px;
+    
+}
+.img-proyecto{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/img1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    
+}
+.texto-proyectos{
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Monserrat", sans-serif;
+    border-top: 2px solid var(--color3);
+    background: var(--color2);
+    color: white;
+}
+.texto-proyectos h4{
+    padding-top: 10px;
+}
+.boton-proyectos{
+    width: 50%;
+    height: auto;
+    margin: 30px 0 auto 0;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Monserrat", sans-serif;
+    background-color: var(--color3);
+    text-align: center;
+}
+.boton-proyectos:hover {
+    background-color: var(--color4);
+    color: black;
+    width: 53%;
+}
+
+.contacto{
+    width: 80%;
+    height: 500px;
+    background-color: #ddd;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.texto-contacto{
+    font-size: 30px;
+    color: var(--color2);
+    padding-top: 20px;
+}
+.seccion-contacto{
+    width: 80%;
+    display: flex;
+    margin: 10px auto;
+
+}
+.formulario{
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+}
+.img-contacto{
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url(../img/img4.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Monserrat", sans-serif;
+}
+
+.datos input{
+    width: 60%;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+    text-align: center;
+    background: transparent;
+}
+.enviar{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 20px;
+    background: var(--color3);
+}
+.enviar:hover{
+    background-color: var(--color4);
+    color:black;
+}
+
+footer{
+    background-color: #252525;
+    margin-top: 30px;
+}
+.pie{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+
+}
+.redes-pie i{
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
+.texto-pie{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+}
+footer h6{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Monserrat",sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu { 
+        display:none;
+        position: absolute;
+        background: var(--color3); 
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#ddd;
+        width: 100%;
+        border-radius: 0;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        margin: 10px;
+    }
+    .img-contacto{
+        display: none;
+    }
+    .seccion-contacto{
+        justify-content: center;
+        
+    }
+    .card-proyectos{
+        width: 70%;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .datos input{
+        width: 100%;
+        text-align: center;
+    }
+  
+}    
+
+@media (max-width: 600px){
+    .seccion-sobre-mi{
+        width: 90%;
+        height: auto;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-texto{
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+      
+    }
+    .card-btn{
+        justify-content: center;
+    }
+    .card-proyectos{
+        width: 90%;
+    }
+    .info-portfolio{
+        width: 90%;
+    }
+    .pie{
+        flex-direction: column;
+    }
+}
